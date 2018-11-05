@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Пример 095.</title>
+</head>
+<body>
+<form method="post">
+    <!--
+        атрибут tabindex позволяет установить порядок перемещения по элементам формы
+        при нажатии кнопки Tab
+    -->
+    <input type="text" name="user_name" placeholder="Имя пользователя" tabindex="0">
+    <input type="email" name="user_email" placeholder="E-mail" tabindex="2">
+    <input type="tel" placeholder="Телефон" tabindex="1">
+    <button tabindex="4">Отправить</button>
+    <button type="reset" tabindex="3">Очистить</button>
+</form>
+</body>
+</html>
