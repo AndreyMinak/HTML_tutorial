@@ -7,12 +7,12 @@
 <body>
 <!-- Пример отображения RSS с сайта lenta.ru -->
 <script type="text/javascript">
-    var charset = 'UTF-8';
-    var t = document.getElementsByTagName('meta');
-    for (var i = 0; i < t.length; i++) {
-        var rg = /charset=["']?([^"']*)/g;
-        if (t[i].content.indexOf('charset') != -1) {
-            charset = rg.exec(t[i].content)[1];
+    let charset = 'UTF-8';
+    const metaTags = document.getElementsByTagName('meta');
+    for (let i = 0; i < metaTags.length; i++) {
+        const regExp = /charset=["']?([^"']*)/g;
+        if (metaTags[i].content.indexOf('charset') !== -1) {
+            charset = regExp.exec(metaTags[i].content)[1];
             break;
         }
     }
